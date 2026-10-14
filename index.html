@@ -27,6 +27,27 @@
 <link rel="stylesheet" href="style-prod.css">
 <style>.s-demo-badge { margin-left: 10px; padding: 2px 8px; border: 1px solid var(--c-accent); border-radius: 999px; font: 500 .7rem/1.4 var(--f-text); letter-spacing: .06em; text-transform: uppercase; color: var(--c-accent); vertical-align: middle; }
 .s-hero__photo img, .s-photos img { box-shadow: 0 0 0 2px var(--c-accent); }</style>
+<style id="otzyvy-yandex">
+.s-reviews__rating { gap: 6px 14px; }
+.s-reviews__num { font-size: 1.9rem; line-height: 1; }
+.s-reviews__stars { font-size: 1.25rem; }
+.s-reviews__stars::after { color: #f5b400; }
+.s-reviews__count { font-weight: 600; color: var(--c-ink); }
+.s-reviews__all { font-weight: 600; text-decoration-thickness: 1.5px; }
+.s-ya-more { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; margin-top: 22px; }
+.s-ya-more .s-note { margin: 0; }
+.s-ya-more__btn { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; padding: 14px 24px; border: 1.5px solid var(--c-ink); border-radius: 999px; color: var(--c-ink); text-decoration: none; font-weight: 600; line-height: 1.3; transition: background .2s, color .2s; }
+.s-ya-more__btn b { font-size: 1.15rem; }
+.s-ya-more__stars { color: #f5b400; letter-spacing: .06em; }
+.s-ya-more__btn:hover { background: var(--c-ink); color: var(--c-canvas); }
+@media (max-width: 480px) { .s-ya-more__btn { width: 100%; justify-content: center; text-align: center; padding: 14px 16px; } }
+</style>
+<style id="rating-hero">
+.s-rating a { color: inherit; text-decoration: none; display: inline-flex; flex-wrap: wrap; align-items: baseline; gap: 0 6px; }
+.s-rating u { text-underline-offset: 3px; text-decoration-color: color-mix(in srgb, currentColor 45%, transparent); }
+.s-rating a:hover u { text-decoration-color: currentColor; }
+.s-rating__stars { color: #fc0; font-size: 1.05rem; letter-spacing: .06em; }
+</style>
 </head>
 <body class="s-prod" id="top" data-wa="79113040666" data-tg="" data-max="">
 <header class="s-bar" data-s-bar>
@@ -43,7 +64,7 @@
       <h1>Маникюр и педикюр в Мурманске – запись на ближайшие дни</h1>
       <p class="s-lead">Студия на Карла Либкнехта, 28, с окнами на город. Выберите услугу, день и время – сообщение уйдёт в WhatsApp студии.</p>
       <ul class="s-ticks"><li>Ежедневно 9:00–21:00</li><li>Снятие бесплатно при новом покрытии</li><li>Чай, кофе и тапочки для гостей</li></ul>
-      <p class="s-rating"><b>5,0</b> на Яндекс.Картах · 130 отзывов</p>
+      <p class="s-rating"><a href="https://yandex.ru/maps/org/yana_nails/195531092541/" target="_blank" rel="noopener"><span class="s-rating__stars" aria-hidden="true">★★★★★</span><b>5,0</b> на Яндекс.Картах · <u>130 отзывов</u></a></p>
       <figure class="s-hero__photo"><img class="" src="assets/hero.webp" alt="Зал студии YaNa nails с панорамными окнами на закате" loading="lazy" decoding="async"></figure>
     </div>
     <div class="s-hero__widget" id="widget"><form class="s-widget" data-s-booking data-days="7" data-closed="" data-slots="09:00,10:00,11:00,12:00,13:00,14:00,15:00,16:00,17:00,18:00,19:00,20:00" data-message="Здравствуйте! Хочу записаться в YaNa nails: {услуга}, {день} в {время}." onsubmit="return false">
@@ -140,7 +161,10 @@
       <li><blockquote>«Уже несколько лет пользуюсь услугами данной студии. Так как я мама малышей-погодок – радует услуга в 4руки 👌🏻 за полтора часа маникюр и педикюр в лучшем виде! Огромная благодарность основателю студии Яне за атмосферу, высокий уровень сервиса и грамотно подобраных мастеров. Девочки всегда внимательно и бережно проводят процедуру. Также радует удобное расположение и красивый вид из французских окон на город ) !»</blockquote><p class="s-reviews__who">Виктория Ш. · 16 ноября 2025</p></li>
       <li><blockquote>«Качественный и аккуратный маникюр) Продержался в отпуске более 1 месяца - ни одной отслойки или скола! Красивый интерьер, предлагают чай/кофе и вкусные конфеты)»</blockquote><p class="s-reviews__who">Виктория Д. · 11 ноября 2025</p></li>
     </ul>
-    <p class="s-note">Отзывы с карточки на Яндекс.Картах, без правок.</p>
+    <div class="s-ya-more">
+      <a class="s-ya-more__btn" href="https://yandex.ru/maps/org/yana_nails/195531092541/" target="_blank" rel="noopener"><span class="s-ya-more__stars" aria-hidden="true">★★★★★</span><b>5,0</b><span>130 отзывов · читать все отзывы на Яндекс.Картах</span></a>
+      <p class="s-note">Отзывы с карточки на Яндекс.Картах, без правок.</p>
+    </div>
   </section>
 
   <section class="s-section s-reveal">
